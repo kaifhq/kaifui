@@ -1,7 +1,7 @@
 {
   "name": "kaifui",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Kaif UI - defaults-first UI library",
   "files": [
     "dist"
