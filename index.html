@@ -1,0 +1,28 @@
+<button id="alert">Alert</button>
+<button id="confirm">Confirm</button>
+<button id="prompt">Prompt</button>
+
+<script type="module">
+import { dynamic } from './src/index.js'
+
+/* API
+window.alert('hi')
+window.confirm('hi')
+window.prompt('hi')
+*/
+
+const promptEl = document.getElementById('prompt')
+promptEl.onclick = async () => {
+  console.log(await dynamic.prompt())
+}
+
+const confirmEl = document.getElementById('confirm')
+confirmEl.onclick = async () => {
+  console.log(await dynamic.confirm())
+}
+const alertEl = document.getElementById('alert')
+alertEl.onclick = async () => {
+  console.log(await dynamic.alert())
+}
+
+</script>
