@@ -158,9 +158,10 @@ export const dynamic = {
             const obj = {}
             new FormData(e.target)
               .forEach((v, k) => obj[k] = v)
+            const keys = Object.keys(obj)
             resolve(
-              Object.keys(obj).length === 1
-                ? obj.val
+              keys.length === 1
+                ? obj[keys[0]]
                 : obj
             )
 
